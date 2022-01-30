@@ -46,6 +46,6 @@ endif()
 add_custom_command(
   TARGET LVLExplorer POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy
-          "${CMAKE_CURRENT_BINARY_DIR}/ThirdParty/LibSWBF2/${CMAKE_BUILD_TYPE}/${LibSWBF2_FileName}"
+          "${CMAKE_CURRENT_BINARY_DIR}/ThirdParty/LibSWBF2/${LibSWBF2_FileName}"
           "${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE}/${LibSWBF2_FileName}"
 )
